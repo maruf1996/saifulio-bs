@@ -1,0 +1,150 @@
+/* Google Fonts  */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Sen:wght@400..800&display=swap");
+
+/* Theme Defaul CSS  */
+
+:root {
+  --heading-font: "Sen", sans-serif;
+  --template-font: "DM Sans", sans-serif;
+  --primary-color: #4c40f7;
+  --secondary-color: #14132b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--template-font);
+  font-size: 16px;
+}
+p {
+  margin-bottom: 0;
+}
+h1 {
+  font-size: 65px;
+}
+h2 {
+  font-size: 48px;
+}
+h3 {
+  font-size: 36px;
+}
+h4 {
+  font-size: 30px;
+}
+h5 {
+  font-size: 24px;
+}
+h6 {
+  font-size: 20px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  color: var(--secondary-color);
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.header-area {
+}
+.header-area .topbar {
+  background-color: var(--secondary-color);
+  padding: 0px 15px;
+}
+.header-area .topbar-left {
+  display: flex;
+}
+.header-area .topbar-left .topbar-item:last-child {
+  margin-left: 35px;
+}
+.header-area .topbar-left .topbar-item a .icon-wrapper {
+  width: 35px;
+  height: 35px;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.header-area .topbar-left .topbar-item a span {
+  color: #fff;
+  margin-left: 5px;
+}
+.header-area .topbar-right {
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.header-area .topbar-social a {
+  color: #fff;
+  font-size: 18px;
+  display: inline-block;
+  margin-right: 6px;
+  transition: 0.3s;
+}
+.header-area .topbar-social a:hover {
+  color: var(--primary-color);
+}
+.header-area .lang-switcher {
+  margin-left: 20px;
+}
+.header-area .lang-switcher ul li {
+  display: flex;
+  cursor: pointer;
+  position: relative;
+  padding: 15px 0;
+}
+.header-area .lang-switcher ul li img {
+  width: 25px;
+}
+.header-area .lang-switcher ul li span {
+  color: #fff;
+  margin-left: 6px;
+}
+.header-area .lang-switcher ul li span i {
+  font-size: 15px;
+  margin-left: 3px;
+}
+.header-area .lang-switcher ul li ul {
+  position: absolute;
+  background-color: #fff;
+  top: calc(100% + 15px);
+  left: 0;
+  width: calc(100% + 15px);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.16);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.header-area .lang-switcher ul li ul li {
+  padding: 6px;
+}
+.header-area .lang-switcher ul li ul li span {
+  color: var(--secondary-color);
+}
+.header-area .lang-switcher ul li:hover ul {
+  opacity: 1;
+  visibility: visible;
+  top: 100%;
+}
