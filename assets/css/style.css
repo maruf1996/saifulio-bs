@@ -216,6 +216,9 @@ img {
 .header-area .header-btn {
   text-align: right;
   padding-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 .header-area .header-btn a {
   background-color: var(--primary-color);
@@ -226,7 +229,47 @@ img {
   font-weight: 700;
   text-transform: capitalize;
 }
-
+.header-area .header-btn button {
+  border: 0;
+  background-color: transparent;
+  font-size: 25px;
+  margin-left: 8px;
+  display: none;
+}
+/* Mobile Menu  */
+.mobile-menu {
+  position: absolute;
+  left: 12.5px;
+  top: 100%;
+  background-color: #ddd;
+  width: calc(100% - 25px);
+  display: none;
+}
+.mobile-menu nav ul li {
+  display: block;
+  border-top: 1px solid #fff;
+}
+.mobile-menu nav ul li a {
+  display: block;
+  padding: 10px 15px;
+  text-align: left;
+}
+.mobile-menu nav ul li.has-submenu::after {
+  top: 10px;
+  right: 15px;
+}
+.mobile-menu nav ul li ul {
+  position: initial;
+  background-color: #ddd;
+  display: none;
+  min-width: auto;
+  width: 100%;
+  box-shadow: none;
+  transition: initial;
+}
+.mobile-menu nav ul li ul li a {
+  padding-left: 30px;
+}
 /* Hero Area  */
 .hero-area {
   background-image: url(../images/hero-bg.jpg);
@@ -235,6 +278,7 @@ img {
   padding: 330px 0 180px 0;
   margin-top: -140px;
   position: relative;
+  overflow: hidden;
 }
 .hero-area .star-shape {
   position: absolute;

@@ -9,16 +9,17 @@
     <!-- Essential CSS Files  -->
     <link rel="stylesheet" href="assets/css/all.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
   </head>
   <body>
     <!-- Header Area  Start-->
     <header class="header-area">
-      <div class="container">
+      <div class="container position-relative">
         <div class="topbar">
           <div class="row align-items-center">
-            <div class="col-lg-7">
+            <div class="col-lg-7 col-6">
               <div class="topbar-left">
                 <div class="topbar-item">
                   <a href="tel:9876578776">
@@ -72,7 +73,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-5">
+            <div class="col-lg-5 col-6">
               <div class="topbar-right">
                 <div class="topbar-social">
                   <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
@@ -116,12 +117,12 @@
         </div>
         <div class="navigation-area">
           <div class="row align-items-center">
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-6">
               <div class="logo-wrapper">
                 <a href="#"><img src="assets/images/logo.jpg" alt="" /></a>
               </div>
             </div>
-            <div class="col-lg-7">
+            <div class="col-lg-7 dekstop-menu">
               <div class="nav-wrapper">
                 <nav>
                   <ul>
@@ -141,12 +142,33 @@
                 </nav>
               </div>
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-6">
               <div class="header-btn">
                 <a href="#">Get Consulting</a>
+                <button class="mobile-menu-toggle">
+                  <i class="fa-solid fa-bars"></i>
+                </button>
               </div>
             </div>
           </div>
+        </div>
+        <div class="mobile-menu">
+          <nav>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li class="has-submenu">
+                <a href="#">Pages</a>
+                <ul>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
@@ -179,7 +201,7 @@
                   ></a>
                 </div>
                 <div class="video-btn">
-                  <a href="#">
+                  <a href="https://youtu.be/TX5To_0XwNM?si=QPhf5Ae_LPI4bUOl">
                     <span class="icon-wrapper"
                       ><i class="fa-solid fa-play"></i
                     ></span>
@@ -199,8 +221,9 @@
     </section>
     <!-- Hero Area  End-->
     <!-- Essential Script Files  -->
-    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
     <script src="assets/js/bootstrap.js"></script>
-    <script src="assets/js/scrips.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
