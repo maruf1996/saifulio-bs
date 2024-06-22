@@ -30,10 +30,35 @@
     max-width: 180px;
     display: inline-block;
   }
+
+  .about-section .about-right {
+    margin-top: 50px;
+  }
+  .about-section .about-left img {
+    max-width: 100%;
+    width: auto;
+  }
+  .team-area .team-btn {
+    text-align: left;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 650px;
+  }
+  .pricing-section .pricing-column {
+    max-width: 450px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 @media (max-width: 575px) {
   h1 {
     font-size: 50px;
+  }
+  h2 {
+    font-size: 40px;
   }
   .header-area .topbar {
     padding: 8px 10px;
@@ -43,6 +68,33 @@
   }
   .header-area .header-btn a {
     display: none;
+  }
+  .about-section .md-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .about-section .md-wrapper .md-content {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+  .about-section .md-wrapper .md-content h5 {
+    font-size: 22px;
+  }
+  .ct-area .ct-column {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .team-area .team-title {
+    text-align: center;
+  }
+  .team-area .team-btn {
+    text-align: center;
+  }
+  .team-area .team-column {
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media (max-width: 480px) {
