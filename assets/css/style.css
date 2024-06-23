@@ -71,6 +71,9 @@ img {
 }
 
 /* Theme Spacing  */
+.pt-40 {
+  padding-top: 40px;
+}
 .pt-60 {
   padding-top: 60px;
 }
@@ -203,7 +206,7 @@ img {
 }
 .header-area .navigation-area {
   background-color: #fff;
-  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 20px 66px rgba(210, 210, 210, 0.25);
 }
 .header-area .logo-wrapper {
   position: relative;
@@ -407,8 +410,8 @@ img {
 .hero-area .hero-img img {
   position: absolute;
   bottom: -180px;
-  width: 500px;
-  left: 20px;
+  width: 625px;
+  left: -60px;
 }
 
 /* About Section  */
@@ -743,4 +746,78 @@ img {
 .feedback-area .rating span {
   font-size: 15px;
   color: #f8c245;
+}
+
+/* Blog Area  */
+.blog-area {
+  overflow: hidden;
+}
+.blog-area .blog-btn {
+  text-align: right;
+}
+.blog-area .blog-btn a {
+  padding: 15px 25px;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  font-family: var(--heading-font);
+  border-radius: 5px;
+  text-transform: capitalize;
+  display: inline-block;
+}
+.blog-area .blog-articles {
+  margin-top: 50px;
+}
+.blog-area .blog-articles article {
+  margin-bottom: 40px;
+}
+.blog-area article .blog-category {
+  text-align: right;
+  padding-right: 25px;
+  margin-top: -25px;
+}
+.blog-area article .blog-category a {
+  background-color: var(--secondary-color);
+  color: #fff;
+  display: inline-block;
+  padding: 11px 20px;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+.blog-area article .blog-category a:hover {
+  background-color: var(--primary-color);
+}
+.blog-area .blog-author {
+  margin-top: 20px;
+}
+.blog-area .blog-author span .name {
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-left: 8px;
+}
+.blog-area .article-title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.blog-area .readmore-btn a {
+  text-transform: capitalize;
+  color: var(--secondary-color);
+  font-family: var(--heading-font);
+  font-weight: 700;
+  font-size: 15px;
+  transition: 0.3s;
+}
+.blog-area .readmore-btn a span {
+  margin-left: 5px;
+}
+.blog-area .readmore-btn a span svg path {
+  stroke: var(--secondary-color);
+  transition: 0.3s;
+}
+.blog-area .readmore-btn a:hover {
+  color: var(--primary-color);
+}
+.blog-area .readmore-btn a:hover span svg path {
+  stroke: var(--primary-color);
 }

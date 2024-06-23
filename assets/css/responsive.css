@@ -52,6 +52,10 @@
     text-align: left;
     margin-top: 30px;
   }
+  .blog-area .blog-btn {
+    text-align: left;
+    margin-top: 30px;
+  }
 }
 @media (max-width: 767px) {
   .container {
@@ -124,6 +128,17 @@
   }
   .feedback-area .slick-slide {
     margin: 0 -10px;
+  }
+  .blog-area .blog-top-content {
+    text-align: center;
+  }
+  .blog-area .blog-btn {
+    text-align: center;
+  }
+  .blog-area .blog-articles article {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media (max-width: 480px) {
