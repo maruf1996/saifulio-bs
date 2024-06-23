@@ -23,4 +23,27 @@ $(function () {
     delay: 10,
     time: 1500,
   });
+
+  // Slick Slider
+  $(".fd-slider").slick({
+    slidesToShow: 3,
+    arrows: false,
+    centerMode: true,
+    responsive: [
+      {
+        breakpoint: 1580,
+        settings: {
+          slidesToShow: 2,
+          centerMode: false,
+        },
+      },
+      {
+        breakpoint: 1180,
+        settings: {
+          slidesToShow: 1,
+          centerMode: false,
+        },
+      },
+    ],
+  });
 });

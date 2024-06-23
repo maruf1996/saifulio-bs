@@ -52,6 +52,7 @@ h6 {
   font-family: var(--heading-font);
   color: var(--secondary-color);
   font-weight: 700;
+  margin-bottom: 0;
 }
 ul {
   margin: 0;
@@ -686,4 +687,60 @@ img {
 .pricing-section .pricing-column.active .table-btn a {
   background-color: #fff;
   border: 1px solid #fff;
+}
+
+/* Testimonial Section  */
+.feedback-area {
+  overflow: hidden;
+}
+.feedback-area .feedback-title {
+  text-align: center;
+  max-width: 550px;
+  margin: auto;
+}
+.feedback-area .feedback-slider-wrapper {
+  width: calc(100% + 300px);
+  margin-left: -150px;
+}
+.feedback-area .slick-list {
+  padding-top: 30px !important;
+  padding-bottom: 70px !important;
+  margin: 0 -22.5px;
+}
+.feedback-area .slick-slide {
+  margin: 0 22.5px;
+  opacity: 0.2;
+  transition: 0.3s;
+}
+.feedback-area .slick-center {
+  opacity: 1;
+}
+.feedback-area .fd-single {
+  display: inline-flex !important;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0px 20px 55px rgba(119, 119, 119, 0.1);
+  padding: 15px 25px 15px 15px;
+  border-radius: 5px;
+}
+.feedback-area .fd-single .fd-left img {
+  width: 230px;
+}
+.feedback-area .fd-right {
+  margin-left: 30px;
+}
+.feedback-area .fd-right .fd-quote p {
+  font-style: italic;
+}
+.feedback-area .fd-right-bottom {
+  margin-top: 20px;
+}
+.feedback-area .fd-right-bottom span {
+  font-weight: 500;
+  margin-top: 5px;
+  display: inline-block;
+}
+.feedback-area .rating span {
+  font-size: 15px;
+  color: #f8c245;
 }
