@@ -15,6 +15,10 @@
     padding: 15px 13px;
     font-size: 14px;
   }
+  .footer-area .footer-widget.ml-60,
+  .footer-area .footer-widget.ml-30 {
+    margin-left: 0;
+  }
 }
 @media (max-width: 991px) {
   .container {
