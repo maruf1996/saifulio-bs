@@ -24,6 +24,9 @@ $(function () {
     time: 1500,
   });
 
+  // Wow js
+  new WOW().init();
+
   // Slick Slider
   $(".fd-slider").slick({
     slidesToShow: 3,
